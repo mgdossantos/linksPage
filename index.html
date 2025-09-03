@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Meus Links</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1e3a8a;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .link-card {
+            transition: all 0.3s ease;
+            background-color: #fdf6e3;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .link-card:hover, .link-card:active {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(231, 76, 60, 0.2);
+        }
+        .accent-color {
+            background-color: #e74c3c;
+        }
+        .text-accent {
+            color: #e74c3c;
+        }
+        /* Mobile optimizations */
+        @media (max-width: 640px) {
+            .link-card {
+                padding: 1rem;
+            }
+            .link-card:active {
+                transform: scale(0.98);
+            }
+        }
+        /* Touch-friendly sizing */
+        .link-card {
+            min-height: 72px;
+        }
+    </style>
+</head>
+<body class="min-h-screen py-4 sm:py-8 px-4 sm:px-6">
+    <div class="max-w-md mx-auto w-full">
+        <!-- Profile Section -->
+        <div class="text-center mb-6 sm:mb-8">
+            <div class="w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-full mx-auto mb-4 flex items-center justify-center text-3xl sm:text-4xl shadow-lg">
+                <img src="images/marcela.jpg"
+                     alt="Foto de perfil"
+                     class="w-full h-full object-cover rounded-full"
+                     onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'w-full h-full flex items-center justify-center text-3xl sm:text-4xl rounded-full\'>👤</div>';">
+            </div>
+            <h1 class="text-xl sm:text-2xl font-bold text-white mb-2">Marcela Dos Santos Prof</h1>
+            <p class="text-white/80 text-sm px-4">Programação descomplicada para iniciantes</p>
+        </div>
+
+        <!-- Links Container -->
+        <div class="space-y-3 sm:space-y-4">
+            <!-- Python Basico -->
+            <a href="https://mgdossantos.github.io/tutoriaPython-LP/" target="_blank" class="link-card block rounded-xl p-4 sm:p-5 shadow-lg">
+                <div class="flex items-center space-x-3 sm:space-x-4">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 accent-color rounded-lg flex items-center justify-center text-white text-xl sm:text-2xl flex-shrink-0">
+                        🐍
+                    </div>
+                    <div class="min-w-0 flex-1">
+                        <h3 class="font-semibold text-gray-800 text-base sm:text-lg">Python Básico</h3>
+                        <p class="text-gray-600 text-sm">Pré-inscrição Turma 2</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Python Analise de Dados -->
+            <a href="https://chat.whatsapp.com/I86ep4yAlbUCuMApuRHk0r?mode=ems_copy_c" target="_blank" class="link-card block rounded-xl p-4 sm:p-5 shadow-lg">
+                <div class="flex items-center space-x-3 sm:space-x-4">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 accent-color rounded-lg flex items-center justify-center text-white text-xl sm:text-2xl flex-shrink-0">
+                        💼
+                    </div>
+                    <div class="min-w-0 flex-1">
+                        <h3 class="font-semibold text-gray-800 text-base sm:text-lg">Python Análise de Dados</h3>
+                        <p class="text-gray-600 text-sm">Lista VIP</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/14388853987" target="_blank" class="link-card block rounded-xl p-4 sm:p-5 shadow-lg">
+                <div class="flex items-center space-x-3 sm:space-x-4">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 accent-color rounded-lg flex items-center justify-center text-white text-xl sm:text-2xl flex-shrink-0">
+                        💬
+                    </div>
+                    <div class="min-w-0 flex-1">
+                        <h3 class="font-semibold text-gray-800 text-base sm:text-lg">WhatsApp</h3>
+                        <p class="text-gray-600 text-sm">Está na dúvida em qual curso escolher? Bora conversar!!</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://www.youtube.com/@MarceladosSantos" target="_blank" class="link-card block rounded-xl p-4 sm:p-5 shadow-lg">
+                <div class="flex items-center space-x-3 sm:space-x-4">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 accent-color rounded-lg flex items-center justify-center text-white text-xl sm:text-2xl flex-shrink-0">
+                        🎥
+                    </div>
+                    <div class="min-w-0 flex-1">
+                        <h3 class="font-semibold text-gray-800 text-base sm:text-lg">YouTube</h3>
+                        <p class="text-gray-600 text-sm">Meus vídeos</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center mt-6 sm:mt-8 pb-4">
+            <p class="text-white/60 text-xs">Criado com ❤️</p>
+        </div>
+    </div>
+
+    <script>
+         // Feedback visual ao clicar, sem bloquear o link
+        document.querySelectorAll('.link-card').forEach(card => {
+            card.addEventListener('click', function(e) {
+                // Aqui pode colocar um efeito, como adicionar uma classe temporária
+                    this.classList.add('ring', 'ring-accent', 'ring-offset-2');
+                    setTimeout(() => {
+                this.classList.remove('ring', 'ring-accent', 'ring-offset-2');
+            }, 200);
+            // Remova o e.preventDefault() para permitir a abertura do link!
+        });
+    });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9795b578417ea305',t:'MTc1NjkwNzM0OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+
